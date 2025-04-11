@@ -1,0 +1,59 @@
+body, h1{
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+
+    background-color: rgb(167, 13, 13);
+    color: white;
+
+    padding: 1rem;
+}
+
+header > ul {
+    display: flex;
+    justify-content: center;
+    justify-content: end;
+    gap: 2rem;
+}
+
+header > ul > li > a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+header > ul > li::marker {
+    content: '👉';
+}
+
+main {
+    margin: 1rem;
+}
+
+#historia > p {
+    width: 50rem;
+    text-align: center;
+}
+
+#tipos {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.card {
+    background-color:aqua;
+    padding: 1rem;
+    border-radius: 15px;
+    width: calc(100% / 3);
+}
+
+.center {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
