@@ -41,14 +41,15 @@ main {
 
 #tipos {
     display: flex;
+    justify-content: space-around;
     flex-wrap: wrap;
+    margin: 2rem;
 }
 
-.card {
-    background-color:aqua;
-    padding: 1rem;
-    border-radius: 15px;
-    width: calc(100% / 3);
+#tipos img {
+    margin: 1rem;
+    width: 22rem;
+    height: 15rem;
 }
 
 .center {
@@ -56,4 +57,30 @@ main {
     align-items: center;
     justify-content: center;
     flex-direction: column;
+}
+
+.receta {
+    background-color: rgb(255, 255, 255);
+    border: solid black 4px;
+    border-radius: 20px;
+    padding: 1.8rem;
+    padding-top: 0;
+    margin: 2rem;
+}
+
+.receta img {
+    margin-right: 2rem;
+    height: 12rem;
+    width: 15rem;
+}
+
+.receta p {
+    margin-right: 2rem;
+    max-width: 30%;
+    min-width: 10%;
+}
+
+.receta-flex {
+    display: flex;
+    flex-wrap: wrap;
 }
