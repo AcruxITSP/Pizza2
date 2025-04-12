@@ -1,13 +1,22 @@
-body, h1{
+:root {
+    --dark: rgb(83, 3, 3);
+    --main: rgb(167, 13, 13);
+    --highlight : rgb(206, 31, 31);
+    --background: rgb(255, 234, 234);
+    scroll-behavior: smooth;
+}
+
+body, h1 {
     margin: 0;
     padding: 0;
+    font-family: "Montserrat", sans-serif;
 }
 
 header {
     display: grid;
     grid-template-columns: 1fr 1fr;
 
-    background-color: rgb(167, 13, 13);
+    background-color: var(--main);
     color: white;
 
     padding: 1rem;
@@ -31,7 +40,8 @@ header > ul > li::marker {
 }
 
 main {
-    margin: 1rem;
+    padding: 1rem;
+    background-color: var(--background);
 }
 
 #historia > p {
@@ -51,6 +61,12 @@ main {
     width: 22rem;
     height: 15rem;
     border-radius: 15px;
+    border: solid var(--dark) 5px;
+    transition-duration: 0.3s;
+}
+
+#tipos img:hover {
+    transform: scale(1.1);
 }
 
 .center {
@@ -60,19 +76,25 @@ main {
     flex-direction: column;
 }
 
+.shadow {
+    box-shadow: 5px 10px 10px var(--dark);
+}
+
 .receta {
-    background-color: rgb(255, 255, 255);
-    border: solid black 4px;
+    background-color: var(--highlight);
     border-radius: 20px;
     padding: 1.8rem;
-    padding-top: 0;
+    padding-top: 1rem;
     margin: 2rem;
+    color: white;
+    
 }
 
 .receta img {
     margin-right: 2rem;
     height: 12rem;
     width: 15rem;
+    border-radius: 20px;
 }
 
 .receta p {
