@@ -80,6 +80,10 @@ main {
     box-shadow: 5px 10px 10px var(--dark);
 }
 
+.lista-receta {
+    width: 25rem;
+}
+
 .receta {
     background-color: var(--highlight);
     border-radius: 20px;
